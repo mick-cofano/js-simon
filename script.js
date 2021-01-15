@@ -35,3 +35,8 @@ while (numeriRandom.length < 5) {
 var numeriStringa = numeriRandom.join(' ');
 $('#numeri').text(numeriStringa);
 console.log(numeriRandom);
+
+// inizio countdown di 30 sec, al quale alla fine nascondiamo i numeri random
+setTimeout(function() {
+    $('#numeri').text(''); // '' per togliere i numeri alla fine del CD
+}, 30000);
